@@ -2,13 +2,9 @@ import random
 
 
 """
-A simple multiplayer Tic Tac Toe game,
-using Python.
-This software is available under GPL license.
-Author: Shahibur Rahaman
-Year: 2020
-Month: November
-License: GNU GENERAL PUBLIC LICENSE (GPL v3.0)
+MIT License
+
+Copyright (c) 2020 Shahibur Rahaman
 """
 
 version = "2.6.10.20"
