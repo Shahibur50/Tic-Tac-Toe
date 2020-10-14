@@ -1,4 +1,3 @@
-
 """
 MIT License
 
@@ -40,6 +39,8 @@ def matrix(cells):  # Declaring a function as the map of the game.
 
 def game():
     while True:
+        rounds = 0
+
         x_score = 0
         o_score = 0
 
@@ -50,7 +51,7 @@ def game():
             except ValueError:
                 print("\nPlease enter only numerical values!\n")
                 continue
-        
+
         choice = ["O", "X"]
         turn = random.choice(choice)
 
@@ -100,7 +101,7 @@ def game():
                     if cell == "_":
                         empty_count += 1
 
-                #Setting up all of the winning situations.
+                # Setting up all of the winning situations.
 
                 hor1 = cells[0] + cells[1] + cells[2]
                 hor2 = cells[3] + cells[4] + cells[5]
@@ -151,9 +152,9 @@ def game():
         else:
             print("|=============== Draw match ===============|\n")
 
-        NG = input("\nDo you want to play another match [y/n]: ")
+        ng = input("\nDo you want to play another match [y/n]: ")
         print("")
-        if NG == "n" or NG == "N":
+        if ng == "n" or ng == "N":
             print("Exiting now...")
             time.sleep(1)
             break
